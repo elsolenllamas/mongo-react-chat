@@ -1,0 +1,103 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,400italic);
+
+
+// Body
+$font-stack: 'Open Sans', sans-serif;
+$main-background: #EFEFEF;
+$container-background: #FFFFFF;
+$sidebar-background: #333333;
+$sidebar-text-color: #FFFFFF;
+$sidebar-link-color: #999999;
+$default-gap: 25px;
+$min-gap: 10px;
+
+// Navigation
+$hover-background: #E7E7E7;
+$hover-text: #555;
+
+
+html, body, #wrapper {
+  height:100%;
+}
+
+body {
+  background: $main-background;
+  padding-top: 10px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: $hover-text;
+  background-color: $hover-background;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.message-body {
+  display:block;
+}
+
+.col-centered{
+  background: $container-background;
+  float: none;
+  margin: 0 auto;
+  padding:$default-gap;
+}
+
+.menu-active {
+  font-weight:bold;
+}
+
+.message-active {
+  background:#666;
+  color:$sidebar-text-color;
+}
+
+.add-message {
+  padding:0px;
+  border:0px;
+}
+
+.add-message-btn {
+  padding:8px;
+  background:$container-background;
+  border:0px;
+}
+
+.sidebar {
+  background:$sidebar-background;
+  padding:$default-gap;
+}
+
+.sidebar p, .sidebar small{
+  color:$sidebar-text-color;
+}
+
+.sidebar i{
+  color:$sidebar-text-color;
+}
+
+.sidebar a{
+  color:$sidebar-link-color;
+  padding:0px $min-gap 0px $min-gap;
+  &:hover {
+        text-decoration:none;
+    }
+}
+
+.username {
+  font-weight:bold;
+  text-transform:capitalize;
+  margin-right:$min-gap;
+}
+
+.user-navigation {
+  position:relative;
+  padding:0px;
+}
+
+.channels-container {
+  margin-bottom:$min-gap;
+}
